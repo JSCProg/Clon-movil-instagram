@@ -1,0 +1,14 @@
+node_modules/
+.expo/
+dist/
+web-build/
+*.log
+.DS_Store
+*.p12
+*.jks
+*.orig.*
+*.pem
+android/
+ios/
+.env
+*.tsbuildinfo
