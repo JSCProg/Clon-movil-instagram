@@ -31,14 +31,3 @@ src/
     Publicacion.tsx
     Cargando.tsx
 ```
-
-## Cumplimiento de requisitos
-
-- **Barra de navegación nativa superior**: `@react-navigation/native-stack`, que usa el header nativo de cada plataforma (`StackPrincipal.tsx`).
-- **Feed dinámico con FlatList optimizado**: `PantallaFeed.tsx` usa `FlatList` con `initialNumToRender`, `maxToRenderPerBatch`, `windowSize` y `removeClippedSubviews`.
-- **Mapeo de 10+ imágenes vía Axios**: `apigatos.ts` consulta `https://api.thecatapi.com/v1/images/search?limit=10`.
-- **StyleSheet.create() exclusivo**: todos los componentes y pantallas definen sus estilos con `StyleSheet.create()`, sin estilos en línea.
-- **Interacciones táctiles**: `TouchableOpacity` en todos los botones e íconos interactivos.
-- **Flujo de navegación**: Feed → Detalle de publicación → Perfil, totalmente funcional con React Navigation.
-- **Cuadrícula 3 columnas en el perfil**: `PantallaPerfil.tsx` usa `FlatList` con `numColumns={3}`.
-- **Personalización de assets nativos**: icono, `adaptive-icon`, splash screen y `StatusBar` personalizados en `app.json` y `App.tsx`.
